@@ -18,6 +18,15 @@ p {
     color: #e3dcbf;
 }
 
+.my-nav a:hover {
+    color: #d2cbae;
+}
+
+.my-nav-active {
+    color: #d2cbae !important;
+    font-weight: 500;
+}
+
 /* ---- end global styling ---- */
 
 /* ---- start index.html ---- */
