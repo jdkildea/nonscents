@@ -62,7 +62,7 @@ p {
 .menu-button {
     width: 50%;
     min-width: 350px;
-    margin: auto;
+    margin: 50px auto 0px;
     background-color: #fff;
     border: 1px solid #eee ;
     color: #000;
@@ -87,11 +87,18 @@ p {
     min-width: 350px;
     border-radius: 0px;
     border: none;
+    background-color: #fff;
+    color: #000;
 }
 
 .menu-option:hover {
     background-color: #eee;
     color: #111;
+}
+
+.menu-option:active {
+    background-color: #ddd !important;
+    color: #111 !important;
 }
 
 .menu-dropdown {
@@ -100,6 +107,19 @@ p {
     margin: auto;
 }
 
+.menu-section {
+    width: 75%;
+    min-width: 400px;
+    max-width: 700px;
+    margin: auto;
+}
 
+.section-items {
+    width: 90%;
+    min-width: 350px;
+    max-width: 600px;
+    margin: auto;
+    padding: 0px;
+}
 
 /* ---- end menu.html ---- */
