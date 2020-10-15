@@ -1,4 +1,23 @@
 @charset "UTF-8";
-/* Add your custom CSS declarations below  */
+.home-container {
+    display: inline !important;
+    height: 100%;
+    padding-top: 10%;
+}
 
+.home-logotype {
+    padding: 0px 30px;
+}
 
+.home-nav {
+    margin-top: 5%
+}
+
+.home-nav a {
+    color: #e3dcbf !important;
+    font-size: 2.5em;
+    font-family: forma-djr-deck, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #e3dcbf !important;
+}
