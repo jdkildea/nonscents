@@ -1,6 +1,27 @@
 @charset "UTF-8";
+/* ---- start global styling ---- */
+.body-style {
+    font-family: forma-djr-deck, sans-serif;
+    font-style: normal;
+}
+
+p {
+    font-weight: 100;
+}
+
+.my-nav {
+    background-color: #C191A1;
+    font-size: 1.2rem;
+}
+
+.my-nav a {
+    color: #e3dcbf;
+}
+
+/* ---- end global styling ---- */
+
+/* ---- start index.html ---- */
 .home-container {
-    display: inline !important;
     height: 100%;
     padding-top: 10%;
 }
@@ -10,14 +31,20 @@
 }
 
 .home-nav {
-    margin-top: 5%
+    margin-top: 5%;
 }
 
 .home-nav a {
     color: #e3dcbf !important;
-    font-size: 2.5em;
+    font-size: 2.5rem;
     font-family: forma-djr-deck, sans-serif;
-    font-weight: 300;
+    font-weight: 500;
     font-style: normal;
-    color: #e3dcbf !important;
 }
+/* ---- end index.html ---- */
+
+/* ---- start about.html ---- */
+
+
+
+/* ---- end about.html ---- */
