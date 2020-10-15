@@ -9,23 +9,25 @@ p {
     font-weight: 100;
 }
 
-.my-nav {
-    background-color: #fff;
-    font-size: 1.5rem;
-}
+/* ---- main navigation bar ---- */
+    .my-nav {
+        background-color: #fff;
+        font-size: 1.5rem;
+    }
 
-.my-nav a {
-    color: #e3dcbf;
-}
+    .my-nav a {
+        color: #e3dcbf;
+    }
 
-.my-nav a:hover {
-    color: #d2cbae;
-}
+    .my-nav a:hover {
+        color: #d2cbae;
+    }
 
-.my-nav-active {
-    color: #d3ccaf !important;
-    font-weight: 500;
-}
+    .my-nav-active {
+        color: #d3ccaf !important;
+        font-weight: 500;
+    }
+/* ---- end main site navigation bar */
 
 /* ---- end global styling ---- */
 
