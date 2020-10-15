@@ -23,7 +23,7 @@ p {
 }
 
 .my-nav-active {
-    color: #d2cbae !important;
+    color: #d3ccaf !important;
     font-weight: 500;
 }
 
@@ -57,3 +57,49 @@ p {
 
 
 /* ---- end about.html ---- */
+
+/* ---- start menu.html ---- */
+.menu-button {
+    width: 50%;
+    min-width: 350px;
+    margin: auto;
+    background-color: #fff;
+    border: 1px solid #eee ;
+    color: #000;
+    border-radius: 0px;
+    font-size: 1.5rem;
+}
+
+.menu-button:hover {
+    background-color: #eee;
+    color: #111;
+    border: 1px solid #eee ;
+}
+
+.menu-button:active {
+    background-color: #ddd !important;
+    color: #111 !important;
+    border: 1px solid #ddd !important;
+}
+
+.menu-option {
+    width: 100%;
+    min-width: 350px;
+    border-radius: 0px;
+    border: none;
+}
+
+.menu-option:hover {
+    background-color: #eee;
+    color: #111;
+}
+
+.menu-dropdown {
+    width: 50%;
+    min-width: 350px;
+    margin: auto;
+}
+
+
+
+/* ---- end menu.html ---- */
