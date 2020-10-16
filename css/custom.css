@@ -9,10 +9,23 @@ p {
     font-weight: 100;
 }
 
+h1 {
+    line-height: 80px;
+    vertical-align: middle !important;
+}
+
+.my-rounded {
+    border-radius: 30px;
+}
+
 /* ---- main navigation bar ---- */
     .my-nav {
         background-color: #fff;
         font-size: 1.5rem;
+    }
+
+    .my-nav-item {
+        border-radius: 15px;
     }
 
     .my-nav a {
@@ -27,6 +40,11 @@ p {
         color: #d3ccaf !important;
         font-weight: 500;
     }
+
+    .my-nav-toggle-button {
+        border-color: #e3dcbf
+    }
+
 /* ---- end main site navigation bar */
 
 /* ---- end global styling ---- */
@@ -125,3 +143,13 @@ p {
 }
 
 /* ---- end menu.html ---- */
+
+/* ---- start order.html ---- */
+
+.upserve {
+    max-width: 220px;
+    vertical-align: top;
+}
+
+
+/* ---- end order.html ---- */
