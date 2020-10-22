@@ -20,127 +20,162 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse float-right" id="navbarNavAltMarkup ">
-                    <div class="navbar-nav ml-auto">
-                    <a class="nav-link active my-nav-active" href="#"><span class="sr-only">(current)</span>Menu</a>
-                    <a class="nav-link " href="about.html">About</a>
-                    <a class="nav-link" href="order.html">Order Now</a>
-                    <a class="nav-link " href="catering.html">Catering</a>
+                    <div class="navbar-nav ml-auto ">
+                    <a class="nav-link border-0 shadow mx-2 my-nav-item active my-nav-active" href="#"><span class="sr-only">(current)</span>Menu</a>
+                    <a class="nav-link border-0 shadow mx-2 my-nav-item" href="about.html">About</a>
+                    <a class="nav-link border-0 shadow mx-2 my-nav-item" href="order.html">Order Now</a>
+                    <a class="nav-link border-0 shadow mx-2 my-nav-item" href="catering.html">Catering</a>
                     </div>
                 </div>
             </nav>
 
         <div class="jumbotron-fluid">
-            <img class="img-fluid" src="" alt="">
+            <div id="sketchdiv"></div>
         </div> <!-- Jumbotron -->
 
-        <div class="container">
+        <div class="container shadow p-4 my-rounded">
             <h1 class="page-title">The Selection</h1>
-            
-            <p class="text-center">
-                <button class="btn btn-primary text-center menu-button" type="button" data-toggle="collapse" data-target="#options" aria-expanded="false" aria-controls="options">
-                    Menu
-                </button>
-            </p> <!-- text-center -->
-            
-            <div class="collapse text-center menu-dropdown" id="options">
-                <button class="btn btn-primary text-center menu-option" type="button" data-toggle="collapse" data-target="#options, #breads, #cakes, #pastries" aria-expanded="false" aria-controls="options">
-                    <h4>All Items</h4>
-                </button>
-                <button class="btn btn-primary text-center menu-option" type="button" data-toggle="collapse" data-target="#options, #breads" aria-expanded="false" aria-controls="options">
-                    <h4>Breads</h4>
-                </button>
-                <button class="btn btn-primary text-center menu-option" type="button" data-toggle="collapse" data-target="#options, #cakes" aria-expanded="false" aria-controls="options">
-                    <h4>Cakes</h4>
-                </button>
-                <button class="btn btn-primary text-center menu-option" type="button" data-toggle="collapse" data-target="#options, #pastries" aria-expanded="false" aria-controls="options">
-                    <h4>Pastries</h4>
-                </button>
-                
-            </div> <!-- collapse -->
 
-            <div id="breads" class="collapse.show menu-section">
-                <h3>Breads</h3>
-                <ul class="list-group list-group-flush section-items">
-                    <li class="list-group-item">
-                    <p class="float-left">Item</p>
-                    <p class="float-right">5.70</p>
-                    </li>
-                    <li class="list-group-item">
-                    <p class="float-left">Item</p>
-                    <p class="float-right">4.30</p>
-                    </li>
-                    <li class="list-group-item">
-                    <p class="float-left">Item</p>
-                    <p class="float-right">3</p>
-                    </li>
-                    <li class="list-group-item">
-                    <p class="float-left">Item</p>
-                    <p class="float-right">3.50</p>
-                    </li>
-                    <li class="list-group-item">
-                    <p class="float-left">Item</p>
-                    <p class="float-right">4</p>
-                    </li>
-                </ul>
-            </div> <!-- #breads -->
+                <div class="accordion menu-button" id="accordion">
+                    <div class="card ">
+                        <div class="card-header" id="allItems">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseOne, #collapseTwo, #collapseThree" aria-expanded="true" aria-controls="collapseOne, collapseTwo, collapseThree">
+                                All Items
+                                </button>
+                            </h2>
+                        </div> <!-- allItems -->
+                    </div><!-- card -->
+                    
+                    <div class="card ">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Breads
+                                </button>
+                            </h2>
+                        </div> <!-- #headingOne -->
+                    </div><!-- card -->
 
-            <div id="cakes" class="collapse.show menu-section">
-                <h3>Cakes</h3>
-                <ul class="list-group list-group-flush section-items">
-                    <li class="list-group-item">
-                    <p class="float-left">Item</p>
-                    <p class="float-right">5.70</p>
-                    </li>
-                    <li class="list-group-item">
-                    <p class="float-left">Item</p>
-                    <p class="float-right">4.30</p>
-                    </li>
-                    <li class="list-group-item">
-                    <p class="float-left">Item</p>
-                    <p class="float-right">3</p>
-                    </li>
-                    <li class="list-group-item">
-                    <p class="float-left">Item</p>
-                    <p class="float-right">3.50</p>
-                    </li>
-                    <li class="list-group-item">
-                    <p class="float-left">Item</p>
-                    <p class="float-right">4</p>
-                    </li>
-                </ul>
-            </div> <!-- #cakes -->
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Cakes
+                                </button>
+                            </h2>
+                        </div><!-- #headingTwo -->
+                    </div><!-- card -->
 
-            <div id="pastries" class="collapse.show menu-section">
-                <h3>Pastries</h3>
-                <ul class="list-group list-group-flush section-items">
-                    <li class="list-group-item">
-                    <p class="float-left">Item</p>
-                    <p class="float-right">5.70</p>
-                    </li>
-                    <li class="list-group-item">
-                    <p class="float-left">Item</p>
-                    <p class="float-right">4.30</p>
-                    </li>
-                    <li class="list-group-item">
-                    <p class="float-left">Item</p>
-                    <p class="float-right">3</p>
-                    </li>
-                    <li class="list-group-item">
-                    <p class="float-left">Item</p>
-                    <p class="float-right">3.50</p>
-                    </li>
-                    <li class="list-group-item">
-                    <p class="float-left">Item</p>
-                    <p class="float-right">4</p>
-                    </li>
-                </ul>
-            </div> <!-- #pastries -->
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Pastries
+                                </button>
+                            </h2>
+                        </div> <!-- #headingThree -->
+                    </div><!-- card -->
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <h3>Breads</h3>
+                            <ul class="list-group list-group-flush section-items">
+                                <li class="list-group-item">
+                                <p class="float-left">Item</p>
+                                <p class="float-right">5.70</p>
+                                </li>
+                                <li class="list-group-item">
+                                <p class="float-left">Item</p>
+                                <p class="float-right">4.30</p>
+                                </li>
+                                <li class="list-group-item">
+                                <p class="float-left">Item</p>
+                                <p class="float-right">3</p>
+                                </li>
+                                <li class="list-group-item">
+                                <p class="float-left">Item</p>
+                                <p class="float-right">3.50</p>
+                                </li>
+                                <li class="list-group-item">
+                                <p class="float-left">Item</p>
+                                <p class="float-right">4</p>
+                                </li>
+                            </ul>
+                        </div><!-- card-body -->
+                        </div> <!-- collapse-one -->
+                    
+
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                                <h3>Cakes</h3>
+                                <ul class="list-group list-group-flush section-items">
+                                    <li class="list-group-item">
+                                    <p class="float-left">Item</p>
+                                    <p class="float-right">5.70</p>
+                                    </li>
+                                    <li class="list-group-item">
+                                    <p class="float-left">Item</p>
+                                    <p class="float-right">4.30</p>
+                                    </li>
+                                    <li class="list-group-item">
+                                    <p class="float-left">Item</p>
+                                    <p class="float-right">3</p>
+                                    </li>
+                                    <li class="list-group-item">
+                                    <p class="float-left">Item</p>
+                                    <p class="float-right">3.50</p>
+                                    </li>
+                                    <li class="list-group-item">
+                                    <p class="float-left">Item</p>
+                                    <p class="float-right">4</p>
+                                    </li>
+                                </ul>
+                            </div><!-- card-body -->
+                            </div> <!-- collapse-two -->
+                    
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        <h3>Pastries</h3>
+                        <ul class="list-group list-group-flush section-items">
+                            <li class="list-group-item">
+                            <p class="float-left">Item</p>
+                            <p class="float-right">5.70</p>
+                            </li>
+                            <li class="list-group-item">
+                            <p class="float-left">Item</p>
+                            <p class="float-right">4.30</p>
+                            </li>
+                            <li class="list-group-item">
+                            <p class="float-left">Item</p>
+                            <p class="float-right">3</p>
+                            </li>
+                            <li class="list-group-item">
+                            <p class="float-left">Item</p>
+                            <p class="float-right">3.50</p>
+                            </li>
+                            <li class="list-group-item">
+                            <p class="float-left">Item</p>
+                            <p class="float-right">4</p>
+                            </li>
+                        </ul>
+                    </div><!-- card-body -->
+                    </div> <!-- collapse-three -->
+                </div><!-- accordian -->
+            </div><!-- accordian -->
+
+>>>>>>> Stashed changes
 
         </div> <!-- Container -->
 
 		<!-- jQuery and Bootstrap links - do not delete! -->
 		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 		<script src="js/bootstrap.bundle.min.js"></script>
-		<!-- end of do not delete -->
+        <!-- end of do not delete -->
+
+        <!-- link to p5.js online -->
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
+        <script src="js/cake.js"></script>
+        <!-- end p5 link -->
 	</body>
 </html>
