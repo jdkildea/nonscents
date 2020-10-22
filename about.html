@@ -15,35 +15,40 @@
 
 	</head>
 	<body style="body-style">
-        <nav class="navbar navbar-expand-lg  ml-auto my-nav">
-            <a class="navbar-brand" href="index.html">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse float-right " id="navbarNavAltMarkup ">
-                <div class="navbar-nav ml-auto">
-                <a class="nav-link border-0 shadow mx-2 my-nav-item" href="menu.html">Menu</a>
-                <a class="nav-link active border-0 shadow mx-2 my-nav-active my-nav-item" href="#"><span class="sr-only">(current)</span>About</a>
-                <a class="nav-link border-0 shadow mx-2 my-nav-item" href="order.html">Order Now</a>
-                <a class="nav-link border-0 shadow mx-2 my-nav-item" href="catering.html">Catering</a>
-                </div>
-            </div>
-        </nav>
+        <nav class="navbar navbar-expand-sm ml-auto my-nav">
+                <a class="navbar-brand" href="index.html"><img src="images/logotype.png" class="navlogo"></a>
 
-        <div class="jumbotron-fluid">
-            <img class="img-fluid" src="" alt="">
-        </div> <!-- Jumbotron -->
+                <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse float-right rounded" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto ">
+                        <a class="nav-link border-0 shadow mx-2 text-center my-nav-item" href="menu.html">Menu</a>
+                        <a class="nav-link border-0 shadow mx-2 text-center my-nav-item" href="about.html"><span class="sr-only">(current)</span>About</a>
+                        <a class="nav-link border-0 shadow mx-2 text-center active my-nav-active my-nav-item" href="order.html">Order Now</a>
+                        <a class="nav-link border-0 shadow mx-2 text-center my-nav-item" href="catering.html">Catering</a>
+                    </div>
+                </div>
+            </nav>
+
+
 
         <div class="card w-75 mx-auto my-rounded shadow border-0">
             <div class="card-body">
                 <h1 class="page-title">Get to Know NonScents</h1>
-                <div class="media">
-                        <div class="media-body">
-                        <p>At NonScents Bakery we strive to serve our customers and our community. We bake, not only to provide tasty treats for you and yours, but to love each of our neighbors, especially those who who need our love the most.</p>
+                <div class="media row">
+                        <div class="media-body col-md-8">
+                        <p>At NonScents Bakery we strive to serve our customers and our community. We bake, not only to provide tasty treats for you and yours, but to love each of our neighbors, especially those who need our love the most.</p>
                         <h3>About Rachel</h3>
                         <p>Way back in 1998, a little girl was born who would later discover that she was exceptional in many ways but in one in particular: she couldn't smell a thing! Now, Rachel Heiney is the owner and operator of <b>NonScents Bakery</b>.</p> <p>Besides smelling things, there's little that rachel can't do.</p>
                         </div>
-                        <img src="images/rachel.jpg" class="align-self-center ml-3 portrait" alt="Portrait of Rachel Heiney, Owner of NonScents Bakery">
+                        <div class="col-md-4">
+                        <figure class="figure mx-auto img-fig">
+                            <img src="images/owner.jpg" class="figure-img img-fluid rounded img" style="object-position: center" alt="Portrait of Rachel Heiney, Owner of NonScents Bakery">
+                            <figcaption class="figure-caption text-right">Rachel Heiney, Owner of NonScents Bakery</figcaption>
+                        </figure>
+                        </div>
                 </div>
             </div>
         </div> <!-- Container -->

@@ -1,5 +1,5 @@
 function setup() {
-    var canvas = createCanvas(windowWidth, 400);
+    var canvas = createCanvas(windowWidth, 350);
     canvas.parent('sketchdiv');
 	background(255);
 }
@@ -21,6 +21,10 @@ function draw() {
 	
 	
 }
+
+function windowResized() {
+	resizeCanvas(windowWidth, windowHeight);
+  }
 
 function drawCake() {
 	noStroke();
