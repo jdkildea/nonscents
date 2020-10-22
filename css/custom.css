@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* ---- start global styling ---- */
+/* ---- start GLOBAL styling ---- */
 .body-style {
     font-family: forma-djr-deck, sans-serif;
     font-style: normal;
@@ -15,10 +15,10 @@ h1 {
 }
 
 .my-rounded {
-    border-radius: 30px;
+    border-radius: 30px !important;
 }
 
-/* ---- main navigation bar ---- */
+/* ---- MAIN NAVIGATION bar ---- */
     .my-nav {
         background-color: #fff;
         font-size: 1.5rem;
@@ -29,16 +29,17 @@ h1 {
     }
 
     .my-nav a {
+        transition: .3s;
         color: #e3dcbf;
     }
 
     .my-nav a:hover {
+        transition: .3s;
         color: #d2cbae;
     }
 
     .my-nav-active {
         color: #d3ccaf !important;
-        font-weight: 500;
     }
 
     .my-nav-toggle-button {
@@ -49,7 +50,7 @@ h1 {
 
 /* ---- end global styling ---- */
 
-/* ---- start index.html ---- */
+/* ---- start INDEX.html ---- */
 .home-container {
     height: 100%;
     padding-top: 10%;
@@ -61,6 +62,13 @@ h1 {
 
 .home-nav {
     margin-top: 5%;
+    max-height: 100px
+}
+
+.home-nav li {
+    max-height: 100px;
+    vertical-align: middle;
+    height: 50%;
 }
 
 .home-nav a {
@@ -69,16 +77,27 @@ h1 {
     font-family: forma-djr-deck, sans-serif;
     font-weight: 500;
     font-style: normal;
+    padding: 0px;
+    transition: .3s;
+}
+
+.home-nav a:hover{
+    transition: .3s;
+    color: #d2cbae !important;
 }
 /* ---- end index.html ---- */
 
-/* ---- start about.html ---- */
+/* ---- start ABOUT.html ---- */
 
+.portrait {
+    max-width: 400px;
+    border-radius: 25px;
+}
 
 
 /* ---- end about.html ---- */
 
-/* ---- start menu.html ---- */
+/* ---- start MENU.html ---- */
 .menu-button {
     width: 50%;
     min-width: 350px;
@@ -90,11 +109,11 @@ h1 {
     font-size: 1.5rem;
 }
 
-.menu-button:hover {
+/* .menu-button:hover {
     background-color: #eee;
     color: #111;
     border: 1px solid #eee ;
-}
+} */
 
 .menu-button:active {
     background-color: #ddd !important;
@@ -105,7 +124,6 @@ h1 {
 .menu-option {
     width: 100%;
     min-width: 350px;
-    border-radius: 0px;
     border: none;
     background-color: #fff;
     color: #000;
@@ -144,7 +162,7 @@ h1 {
 
 /* ---- end menu.html ---- */
 
-/* ---- start order.html ---- */
+/* ---- start ORDER.html ---- */
 
 .upserve {
     max-width: 220px;
