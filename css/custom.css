@@ -88,7 +88,7 @@ h1 {
     max-height: 100px;
     vertical-align: middle;
     height: 50%;
-    margin-top: 30px;
+    margin: 0px 0px 30px;
     transition: .3s;
 }
 
