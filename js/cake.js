@@ -1,6 +1,6 @@
 function setup() {
-    var canvas = createCanvas(windowWidth, 350);
-    canvas.parent('sketchdiv');
+	var canvas = createCanvas(windowWidth, 200);
+	canvas.parent('sketchdiv');
 	background(255);
 }
 
@@ -9,11 +9,13 @@ var gap = 4;//gap between layers
 var spacing = 25;//distancing from beginning of each layer
 
 function draw() {
-	translate(width/2-200, height/2-100);
+	translate(width/2-100, height/2-70);
 	
 	angleMode(DEGREES);
 	
-	scale(1.5);
+	scale(.75);
+
+	strokeWeight(2);
 	
 	drawPlatter();
 	
@@ -23,14 +25,16 @@ function draw() {
 }
 
 function windowResized() {
-	resizeCanvas(windowWidth, windowHeight);
+	resizeCanvas(windowWidth, 200);
   }
 
 function drawCake() {
-	noStroke();
-	
+	stroke(0);
+	strokeWeight(1.5);
 	fill(255);
 	
+    strokeWeight(2);
+  
 	beginShape();
 	vertex(-1, 50);
 	vertex(266, 4);
@@ -38,10 +42,8 @@ function drawCake() {
 	vertex(-1, 50+3*(gap+spacing));
 	endShape(CLOSE);
 	
-	fill('#D9A3B5');
 	arc(0, 50, 600, 200, 330, angleEnd, PIE);//top of slice
 		
-	fill('#421E2A');
 	beginShape();//top layer
 	vertex(-1, 50+gap);
 	vertex(266, 4+gap);
@@ -49,7 +51,6 @@ function drawCake() {
 	vertex(-1, 70+gap);
 	endShape(CLOSE);
 	
-	fill('#C191A1');
 	beginShape();//second layer
 	vertex(-1, 50+spacing+gap);
 	vertex(266, 4+spacing+gap);
@@ -57,7 +58,6 @@ function drawCake() {
 	vertex(-1, 70+spacing+gap);
 	endShape(CLOSE);
 	
-	fill('#421E2A');
 	beginShape();//third layer
 	vertex(-1, 50+2*spacing+gap);
 	vertex(266, 4+2*spacing+gap);
@@ -65,7 +65,6 @@ function drawCake() {
 	vertex(-1, 70+2*spacing+gap);
 	endShape(CLOSE);
 	
-	fill('#C191A1');
 	beginShape();//fourth layer
 	vertex(-1, 50+3*spacing+gap);
 	vertex(266, 4+3*spacing+gap);
@@ -77,9 +76,7 @@ function drawCake() {
 function drawPlatter(){
 	push();
 	
-	fill(250);
-	stroke(255);
-	strokeWeight(10);
+	stroke(0);
 	rotate(-5);
 	ellipse(100, 120, 400, 150);
 
